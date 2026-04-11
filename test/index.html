@@ -46,8 +46,8 @@
       running on <code>localhost:3001</code>.
     </p>
 
-    <!-- The loader will inject the "Open Publisher" button here -->
-    <div id="widget-target"></div>
+    <!-- The loader will inject the "Open Publisher" button here when using data attributes -->
+    <div id="widget-target" data-palactix-widget data-token="test-token-placeholder" data-app-url="http://localhost:3001"></div>
 
     <div class="note">
       Make sure <code>publisher-app</code> is running:<br />
@@ -62,14 +62,9 @@
   -->
   <script src="/publisher/dist/iife/loader.min.js"></script>
   <script>
-    PalactixPublisher.init({
-      widgetId:  'wgt_hOnoPuxomBsoxM7iGziocBck',
-      initToken: 'test-token-placeholder',   // replace with a real init token when backend is running
-      appUrl:    'http://localhost:3001',
-      target:    document.getElementById('widget-target'),
-      onReady:   function() { console.log('[test] Widget ready'); },
-      onClose:   function() { console.log('[test] Widget closed'); },
-    });
+    // If you prefer manual init instead of data attributes:
+    // const widget = PalactixWidget.init({ token: 'test-token-placeholder', appUrl: 'http://localhost:3001' });
+    // document.getElementById('open-publisher').addEventListener('click', () => widget.publish());
   </script>
 </body>
 </html>
