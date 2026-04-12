@@ -62,7 +62,7 @@ This follows the **BYOK (Bring Your Own Keys)** model — meaning you use **your
 ### Setup Steps
 
 1. Create a developer account  
-   https://palactix.com/developer/register  
+   https://palactix.com/developer/signup  
 
 2. Create a new app  
    https://palactix.com/developer/apps  
