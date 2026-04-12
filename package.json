@@ -1,6 +1,6 @@
 {
   "name": "@palactix/publisher-widget",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Embeddable publisher widget for Palactix — schedule and publish social media posts from any website.",
   "license": "MIT",
   "private": false,
@@ -20,7 +20,7 @@
     "url": "https://github.com/palactix/publisher-widget/issues"
   },
   "sideEffects": false,
-  
+
   "author": {
     "name": "Jitendra Meena",
     "email": "jitendra@palactix.com",
