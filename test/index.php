@@ -220,11 +220,11 @@ $jsToken  = json_encode($initToken, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT
   </div>
 
   <!--
-    Loader is served from palactix-widgets/ root.
-    Run PHP server from palactix-widgets/:  php -S localhost:8080
-    Then open: http://localhost:8080/publisher/test/index.php
+    Loader is served from palactix-widgets/publisher-widget root.
+    Run PHP server from palactix-widgets/publisher-widget/:  php -S localhost:8080
+    Then open: http://localhost:8080/test/index.php
   -->
-  <script src="/publisher/dist/iife/loader.min.js"></script>
+  <script src="/dist/iife/loader.min.js"></script>
   <?php if ($initToken): ?>
   <script>
     // 1. Call init() ONCE on page load — pre-loads the iframe in the background.

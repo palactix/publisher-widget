@@ -5,31 +5,22 @@
   "license": "MIT",
   "private": false,
   "type": "module",
+
   "main": "./dist/esm/index.js",
   "module": "./dist/esm/index.js",
   "browser": "./dist/iife/loader.min.js",
+  "types": "./dist/esm/index.d.ts",
+
   "repository": {
     "type": "git",
-    "url": "https://github.com/palactix/publisher-widget.git"
+    "url": "git+https://github.com/palactix/publisher-widget.git"
   },
   "homepage": "https://palactix.com",
-  "keywords": [
-    "palactix",
-    "publisher",
-    "publisher-widget",
-    "social",
-    "social-media",
-    "scheduler",
-    "embed",
-    "widget",
-    "cdn",
-    "unpkg",
-    "jsdelivr",
-    "npm",
-    "esm",
-    "iife",
-    "loader"
-  ],
+  "bugs": {
+    "url": "https://github.com/palactix/publisher-widget/issues"
+  },
+  "sideEffects": false,
+  
   "author": {
     "name": "Jitendra Meena",
     "email": "jitendra@palactix.com",
@@ -41,6 +32,7 @@
       "default": "./dist/iife/loader.min.js"
     }
   },
+  
   "files": [
     "dist"
   ],
@@ -58,5 +50,22 @@
   "devDependencies": {
     "esbuild": "^0.25.0",
     "typescript": "^5.4.0"
-  }
+  },
+  "keywords": [
+    "palactix",
+    "publisher",
+    "publisher-widget",
+    "social",
+    "social-media",
+    "scheduler",
+    "embed",
+    "widget",
+    "cdn",
+    "unpkg",
+    "jsdelivr",
+    "npm",
+    "esm",
+    "iife",
+    "loader"
+  ]
 }
