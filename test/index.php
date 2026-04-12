@@ -254,7 +254,7 @@ $jsToken  = json_encode($initToken, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT
     document.querySelectorAll('.publish-btn').forEach(function(btn, index) {
       btn.addEventListener('click', function() {
         widget.publish({
-          caption: 'Here is another post with the same token! 🎉' + index,
+          caption: 'Publishing content from Palactix publisher widget',
         });
       });
     });
