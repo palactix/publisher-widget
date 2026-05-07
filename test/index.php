@@ -231,6 +231,7 @@ $jsToken  = json_encode($initToken, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT
     var widget = PalactixWidget.init({
       token:       <?= $jsToken ?>,
       appUrl:      <?= $jsAppUrl ?>,
+      primary: '#6366f1', // Optional: customize the widget's primary color
       onReady:     function() { console.log('[test] Widget ready'); },
       onClose:     function() { console.log('[test] Widget closed'); },
       onPublished: function(post) { console.log('[test] Published:', post); },
@@ -255,6 +256,13 @@ $jsToken  = json_encode($initToken, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT
       btn.addEventListener('click', function() {
         widget.publish({
           caption: 'Publishing content from Palactix publisher widget',
+          media: [
+            {
+                type: 'image',
+                url: 'https://jitendra.dev/storage/post-files/GtlJ1JViIe6athuuOTbJdhRzQdTtZ0-metaR2VtaW5pX0dlbmVyYXRlZF9JbWFnZV8yZmdnb3cyZmdnb3cyZmdnLnBuZw==-.png',
+                alt: 'Placeholder image with "Hello World" text',
+            }
+          ]
         });
       });
     });
