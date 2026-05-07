@@ -1,6 +1,6 @@
 {
   "name": "@palactix/publisher-widget",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Embeddable publisher widget for Palactix — schedule and publish social media posts from any website.",
   "license": "MIT",
   "private": false,

@@ -36,7 +36,7 @@ export function init(config: PublisherConfig): PublisherWidget {
   // ── Build iframe hash (never exposes token in query string) ────────────
   const hashParts = [`token=${encodeURIComponent(config.token)}`];
   if (config.primary) hashParts.push(`primary=${encodeURIComponent(config.primary)}`);
-  const iframeHash = `#${hashParts.join('&')}`;
+  const iframeHash = `?${hashParts.join('&')}`;
 
   // ── DOM: overlay > backdrop + container > iframe ───────────────────────
   const overlayEl = document.createElement('div');
