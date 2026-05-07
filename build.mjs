@@ -1,6 +1,7 @@
 // @ts-check
 import * as esbuild from 'esbuild';
 import { argv } from 'process';
+import { execSync as exec } from 'child_process';
 
 const watch = argv.includes('--watch');
 
@@ -37,5 +38,6 @@ if (watch) {
 } else {
   await Promise.all([iifeCtx.rebuild(), esmCtx.rebuild()]);
   await Promise.all([iifeCtx.dispose(), esmCtx.dispose()]);
+  exec('npx tsc --emitDeclarationOnly', { stdio: 'inherit' });
   console.log('[palactix-publisher] build complete');
 }
