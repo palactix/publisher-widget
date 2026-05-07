@@ -21,7 +21,7 @@
 
 import type { PublisherConfig, PublisherWidget, PublishPreFill } from './types';
 
-const PROD_APP_URL = 'https://widgets.palactix.com';
+const PROD_APP_URL = 'https://widgets.palactix.com/embed';
 
 const MSG_READY     = 'PALACTIX_WIDGET_READY';
 const MSG_CLOSE     = 'PALACTIX_WIDGET_CLOSE';
